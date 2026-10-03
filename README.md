@@ -24,3 +24,7 @@ Los datos se guardan en localStorage por navegador; no se sincronizan entre disp
 `assets/exercise-0.webp` a `assets/exercise-13.webp` son recortes de un atlas original generado con la herramienta integrada imagegen. Prompt: atlas educativo de 4 columnas × 3 filas, dos posiciones por ejercicio, sin texto, persona con ropa azul, fondo gris azulado; sentadilla, flexión en pared, puente, bird dog, zancada atrás, elevación de talones, dead bug, plancha, marcha, caminata, gato–vaca y postura del niño.
 
 Atlas de gimnasio: sentadilla goblet, press de pecho, remo en polea, peso muerto rumano, jalón al pecho, press de hombros, elevaciones laterales, tríceps en polea, curl de bíceps, zancada atrás, caminadora y dead bug. Movilidad conservada del primer atlas. Imágenes ampliables desde cada tarjeta.
+
+## Personaje personalizado
+
+Las tarjetas usan `assets/chibi-0.webp` a `assets/chibi-13.webp`, generadas con imagegen a partir de una referencia personal: pelo corto, barba, tatuajes, contextura robusta y shorts negros. Prompt: personaje adulto chibi consistente, dos poses por ejercicio, equipamiento visible, fondo gris azulado, flechas de movimiento, sin texto; misma lista de 12 ejercicios de gimnasio más gato–vaca y postura del niño. La foto original no se publica. Las ilustraciones son orientativas y no sustituyen una demostración técnica.
