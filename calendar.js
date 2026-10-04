@@ -4,7 +4,8 @@ const calendarToday=new Date();calendarToday.setHours(0,0,0,0);
 const calendarKey=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 const calendarChecks=read('rutina-calendar-2026',{});
 let calendarMonth=Math.max(9,Math.min(11,calendarToday.getFullYear()===2026?calendarToday.getMonth():9));
-let decemberGoal=read('rutina-goal-2026','Llegar a diciembre con una rutina constante de hipertrofia: progresar en peso o repeticiones con buena técnica, mejorar mi resistencia y respetar la recuperación.');
+let decemberGoal=read('rutina-goal-2026','Hasta diciembre: ganar músculo, progresar en cargas y mejorar mi resistencia.');
+const oldDefault='Llegar a diciembre con una rutina constante de hipertrofia: progresar en peso o repeticiones con buena técnica, mejorar mi resistencia y respetar la recuperación.';if(decemberGoal===oldDefault){decemberGoal='Hasta diciembre: ganar músculo, progresar en cargas y mejorar mi resistencia.';save('rutina-goal-2026',decemberGoal)}
 function renderCalendar(){
  $('goal-text').textContent=decemberGoal;
  $('calendar-month').textContent=new Date(2026,calendarMonth,1).toLocaleDateString('es-PE',{month:'long',year:'numeric'});
