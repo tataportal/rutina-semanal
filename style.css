@@ -6,3 +6,5 @@
 .plan-notes{margin-top:26px;font-size:14px;color:var(--muted)}.plan-notes summary{cursor:pointer;color:var(--ink);font-weight:600;padding:12px 0}.plan-notes a{color:var(--blue)}.plan-notes p{margin:12px 0}
 .turn-heading{font-size:16px;color:var(--blue);border-bottom:1px solid var(--line);padding:16px 0 12px;margin:18px 0 0}
 .phase-select{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:22px;font-size:13px;color:var(--muted)}.phase-select select{max-width:300px;min-width:0;padding:8px;border:1px solid var(--line);border-radius:8px;background:white;color:var(--ink);font-size:13px}.target-dose{font-size:12px;color:var(--muted);margin:8px 0 0}@media(max-width:600px){.phase-select{align-items:flex-start;flex-direction:column}.phase-select select{width:100%;max-width:none}}
+
+.exercise-advice{margin:10px 0 14px}.exercise-advice summary{cursor:pointer;color:#405171;font-size:13px;font-weight:600;min-height:28px;line-height:28px}.exercise-advice .tip{margin:6px 0 0}.exercise-advice summary:focus-visible{outline:2px solid #244ac2;outline-offset:3px}
