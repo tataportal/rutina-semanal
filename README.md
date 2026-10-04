@@ -9,7 +9,7 @@ Web estática en español para una rutina de siete días. Sin dependencias ni ba
 - Editor de ejercicios, series, instrucciones, imagen de referencia y tiempos.
 - Diseño móvil y escritorio.
 
-La semana incluida es una base de fuerza, cardio y recuperación para un gimnasio con mancuernas, banco y poleas; no es una rutina personalizada. Las ilustraciones son orientativas. Referencia de técnica: [ACSM](https://acsm.org/resistance-training-guidelines-update-2026/) y [CDC](https://www.cdc.gov/physical-activity-basics/adding-adults/index.html).
+La semana incluida es una fase inicial PPL de 3 semanas para alguien que empieza o retoma y refiere dolor lumbar al hacer sentadillas. Se usa el equipo mostrado: mancuernas, banco, poleas y caminadora. No es un protocolo de rehabilitación ni una copia de la rutina original de Arnold o Ronnie. Las ilustraciones son orientativas. Referencia de técnica: [ACSM](https://acsm.org/resistance-training-guidelines-update-2026/) y [CDC](https://www.cdc.gov/physical-activity-basics/adding-adults/index.html).
 
 ## Ejecutar
 
@@ -44,3 +44,26 @@ Verificación: reloj de prueba en Chrome comprobó fases de dos segundos, indica
 Datos en `localStorage` (`rutina-training-log-v1`), solo en el navegador actual; sin sincronización ni copia en GitHub. No borrar los datos del navegador si se desea conservar el registro. La interfaz confirma el guardado únicamente si la escritura tuvo éxito.
 
 Verificado en Chrome móvil: series con pesos decimales y repeticiones distintas, persistencia al recargar, edición sin duplicados, historial compartido entre días, nuevo registro y peso corporal.
+
+
+## Plan actual: PPL de inicio
+
+- Lunes Push: press plano 3×8–12, press de hombros sentado 2×8–12, laterales 2×12–15, tríceps en polea 2×10–15; 10 min de cardio.
+- Martes: 20 min de caminata conversacional.
+- Miércoles Pull: jalón 3×8–12, remo sentado 3×10–12, curl 2×10–15; 10 min de cardio.
+- Jueves: 20 min de caminata.
+- Viernes Legs provisional: split squat con apoyo sin peso 2×8–10 por lado, puente sin peso 2×10–15 y gemelos con apoyo 3×12–15. Solo si son tolerados sin dolor; omitir cualquier movimiento provocador. Sin sentadilla cargada ni RDL mientras se revisa la molestia lumbar.
+- Sábado: 25 min de caminata.
+- Domingo: descanso, sin checks obligatorios.
+
+5 min de calentamiento en días de pesas; series ligeras de aproximación antes del primer compuesto, sin contarlas como trabajo. Descansos 120 s en compuestos, 90 s en accesorios y 60 s en gemelos. Reservar 3 repeticiones las primeras dos semanas y después 2. Se inicia con poco volumen para conocer tolerancia y técnica; no se presenta como volumen máximo de hipertrofia. Cada grupo tiene una sesión semanal en esta fase introductoria. Evaluar tras tres semanas antes de aumentar frecuencia o volumen.
+
+Doble progresión: máximo del rango en todas las series durante dos sesiones, con técnica, reserva y sin dolor; aumentar mínimo peso disponible y regresar al extremo inferior. Piernas siguen sin carga hasta revisar el dolor. Cardio inicial 85 min/semana más calentamientos; aumentar 5 min en una caminata por semana si hay buena tolerancia, hacia 150 min.
+
+Tempo de guía: bajada 3 s y subida 2 s en press plano y split squat; otros movimientos concéntrico 2 s y retorno 3 s. Pausas de 1 s en jalón, remo, puente y gemelos; 0 en los otros. Tiempos editables; no se afirma que sean óptimos universales. Guía guardada bajo nueva versión para no heredar las pausas generales de 2 s. Nueva rutina `rutina-plan-ppl-intro-v2`; versiones anteriores permanecen almacenadas, y no se elimina `rutina-training-log-v1`.
+
+Principios de referencia: [ACSM 2026](https://acsm.org/resistance-training-guidelines-update-2026/), [cardio CDC](https://www.cdc.gov/physical-activity-basics/adding-adults/index.html), [dolor lumbar NHS](https://www.nhs.uk/conditions/back-pain/). La selección y calendario son una adaptación propia, no un plan exacto publicado por estas fuentes. Si el dolor persiste, empeora o se repite, revisar con fisioterapeuta.
+
+Imágenes adicionales `assets/chibi-14.webp` a `chibi-16.webp`, generadas con imagegen: atlas personalizado de split squat de rango corto con apoyo, puente de glúteos en suelo y elevación de talones con apoyo; dos posiciones completas, sin texto, mismo personaje y fondo. Archivo de atlas /private/tmp/rutina-chibi-legs.png utilizado solo durante integración.
+
+Verificación Chrome: nueva rutina sustituye predeterminada anterior, historial previo accesible, imágenes de toda la semana, domingo vacío, ausencia de sentadilla y RDL, tempos específicos y cambio de lado, registro sin peso añadido y ancho móvil.
