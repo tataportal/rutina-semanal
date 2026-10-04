@@ -41,4 +41,6 @@ GitHub Pages publica la raíz de `main`. Verificación en Chrome móvil: seis d�
 
 ## Audio de la guía
 
-La guía reproduce 249 clips MP3 en español generados localmente con Paulina. Usa un elemento audio con controles nativos, sin depender de voces del navegador ni de AudioContext. La primera reproducción se solicita directamente en el toque del usuario. «Probar voz» reproduce una frase; los errores se muestran y pausan la guía. Silenciar, pausar o cerrar detiene el audio. Se verifica reproducción real del elemento y avance del tiempo en Chrome y WebKit; esto no certifica la salida física del teléfono del usuario.
+La guía reproduce 249 clips MP3 en español generados localmente con Paulina. Usa un elemento audio controlado por el reloj de la guía, sin depender de voces del navegador ni de AudioContext. La primera reproducción se solicita directamente en el toque del usuario. «Probar ritmo» ejecuta una repetición temporizada; los errores se muestran y pausan la guía. Silenciar, pausar o cerrar detiene el audio. Se verifica reproducción real del elemento y avance del tiempo en Chrome y WebKit; esto no certifica la salida física del teléfono del usuario.
+
+La guía controla cada fase desde el inicio real de su clip de audio: bajada, pausa y subida esperan sus segundos configurados. No hay reproductor independiente. «Probar ritmo» ejecuta una repetición con el mismo reloj y no marca el ejercicio.
