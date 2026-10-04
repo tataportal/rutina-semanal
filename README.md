@@ -38,3 +38,7 @@ Plan actual: `rutina-plan-hypertrophy-v4`; las versiones anteriores no se borran
 `python3 -m http.server 8765`
 
 GitHub Pages publica la raíz de `main`. Verificación en Chrome móvil: seis días de fuerza, dos turnos, domingo recuperación, imágenes cargadas, guía unilateral, cantidades según etapa, registro de cargas, etapa persistente y editor.
+
+## Audio de la guía
+
+La guía usa un archivo MP3 en español y un índice de 249 indicaciones, generadas localmente con la voz Paulina. AudioContext se activa al pulsar Comenzar guía o Probar voz; no requiere voces del navegador. La prueba reproduce una indicación, y los errores de carga/reproducción se muestran. Silenciar, pausar o cerrar detiene el audio. Se verificó decodificación real y señal de audio con Web Audio en Chrome; pendiente la escucha en el teléfono del usuario.
