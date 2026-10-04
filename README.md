@@ -41,4 +41,4 @@ GitHub Pages publica la raíz de `main`. Verificación en Chrome móvil: seis d�
 
 ## Audio de la guía
 
-La guía usa un archivo MP3 en español y un índice de 249 indicaciones, generadas localmente con la voz Paulina. AudioContext se activa al pulsar Comenzar guía o Probar voz; no requiere voces del navegador. La prueba reproduce una indicación, y los errores de carga/reproducción se muestran. Silenciar, pausar o cerrar detiene el audio. Se verificó decodificación real y señal de audio con Web Audio en Chrome; pendiente la escucha en el teléfono del usuario.
+La guía reproduce 249 clips MP3 en español generados localmente con Paulina. Usa un elemento audio con controles nativos, sin depender de voces del navegador ni de AudioContext. La primera reproducción se solicita directamente en el toque del usuario. «Probar voz» reproduce una frase; los errores se muestran y pausan la guía. Silenciar, pausar o cerrar detiene el audio. Se verifica reproducción real del elemento y avance del tiempo en Chrome y WebKit; esto no certifica la salida física del teléfono del usuario.
