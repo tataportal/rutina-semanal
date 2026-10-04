@@ -36,3 +36,11 @@ Cada ejercicio tiene «Guiar con voz». Incluye preparación, fases con duració
 Usa SpeechSynthesis y la voz española disponible en el dispositivo; sin soporte muestra señales visuales. Requiere página abierta. Solicita Screen Wake Lock cuando está disponible; al ocultar la página pausa el ejercicio. El temporizador de descanso independiente sí conserva la hora al cerrar. No se garantiza voz con pantalla bloqueada. El tempo es una guía de control editable, no una velocidad óptima universal de hipertrofia. No bloquees la respiración durante las pausas.
 
 Verificación: reloj de prueba en Chrome comprobó fases de dos segundos, indicaciones enviadas a síntesis de voz, pausa, descanso de dos segundos, segunda serie, check automático y ancho móvil. La reproducción audible depende del dispositivo y su voz instalada.
+
+## Registro de cargas
+
+«Registrar peso» en los ejercicios de fuerza abre un registro con fecha, peso decimal en kg y repeticiones realizadas por serie, notas e historial editable. Distingue kg por mancuerna, kg totales incluyendo barra, kg indicados por polea y sin peso añadido. El último peso sirve como referencia; las repeticiones nuevas se dejan vacías para anotar lo realmente realizado. Un registro puede editarse sin duplicarlo; «Nuevo registro» crea otra sesión. El historial reúne ejercicios con el mismo nombre e ilustración entre días, y conserva la asociación con el ejercicio original si se renombra.
+
+Datos en `localStorage` (`rutina-training-log-v1`), solo en el navegador actual; sin sincronización ni copia en GitHub. No borrar los datos del navegador si se desea conservar el registro. La interfaz confirma el guardado únicamente si la escritura tuvo éxito.
+
+Verificado en Chrome móvil: series con pesos decimales y repeticiones distintas, persistencia al recargar, edición sin duplicados, historial compartido entre días, nuevo registro y peso corporal.
